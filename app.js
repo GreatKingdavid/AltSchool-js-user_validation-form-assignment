@@ -99,7 +99,7 @@ return true;
 
     if (isValid) {
         alert(`You are now a valid user`);
-        return;
+        document.getElementById("validation_form").reset();
     }
 })
 
