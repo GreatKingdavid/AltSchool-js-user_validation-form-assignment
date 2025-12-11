@@ -75,7 +75,7 @@ function hasSpecialCharacter(password) {
 
 
 if (!hasMinimumLength(userPassword) || !hasUppercase(userPassword) || !hasNumber(userPassword) || !hasSpecialCharacter(userPassword)) {
-  alert("Please password most have at least 8 characters, with one uppercase letter, one number, and one special character.");
+  alert(`Please password most have at least 8 characters, with one uppercase letter |A-Z|, one number |0-9|, and one special character |!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?|.`);
   userPassword.focus();
   return false; // Don't proceed
 }
@@ -98,11 +98,7 @@ return true;
     const isValid = validateAllForms();
 
     if (isValid) {
-        alert(`You are now a valid user, This is how your info is saved to the system:
-            ${userName},
-            ${userEmail},
-            ${userAge},
-            `)
+        alert(`You are now a valid user`);
     }
 })
 
